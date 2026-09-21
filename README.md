@@ -1,4 +1,4 @@
-# 🔍 User Behavior Anomaly Detection using Isolation Forest
+# User Behavior Anomaly Detection using Isolation Forest
 
 An unsupervised machine learning project for detecting **abnormal user behavior** using the **Isolation Forest** algorithm.
 
@@ -6,16 +6,16 @@ The project analyzes user telemetry data such as login frequency, failed passwor
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 In real-world systems, unusual user activity can indicate:
 
-- 🔐 Account compromise
-- 🚨 Suspicious login behavior
-- 📥 Abnormally high data downloads
-- 🌙 Excessive off-hours activity
-- 🌐 Unusual IP usage
-- ⚠️ Potential security incidents
+Account compromise
+Suspicious login behavior
+Abnormally high data downloads
+Excessive off-hours activity
+Unusual IP usage
+Potential security incidents
 
 Since anomaly detection often works with data where attack labels are unavailable, this project uses **Isolation Forest**, an unsupervised anomaly detection algorithm.
 
@@ -54,7 +54,7 @@ Detected Anomalies CSV
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 The main objectives of this project are:
 
@@ -69,7 +69,7 @@ The main objectives of this project are:
 
 ---
 
-# 📊 Dataset
+# Dataset
 
 The project uses a user behavior telemetry dataset containing **600 user records** and **7 columns**.
 
@@ -95,7 +95,7 @@ Columns : 7
 
 ---
 
-# 🧠 Algorithm Used
+# Algorithm Used
 
 ## Isolation Forest
 
@@ -130,7 +130,7 @@ Isolation Forest attempts to isolate such unusual observations using random deci
 
 ---
 
-# 🔑 Important Isolation Forest Concepts
+# Important Isolation Forest Concepts
 
 ### `n_estimators`
 
@@ -193,7 +193,7 @@ bootstrap=False
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 ### Programming Language
 
@@ -223,7 +223,7 @@ bootstrap=False
 
 ---
 
-# 📦 Installation
+# Installation
 
 Clone the repository:
 
@@ -248,7 +248,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn
 
 ---
 
-# 🚀 How to Run
+# How to Run
 
 ### 1. Open the Notebook
 
@@ -308,7 +308,7 @@ Anomaly Export
 
 ---
 
-# 🧹 Data Preprocessing
+# Data Preprocessing
 
 ## 1. Missing Value Check
 
@@ -343,7 +343,7 @@ df.dropna(inplace=True)
 
 ---
 
-# 📈 Exploratory Data Analysis
+# Exploratory Data Analysis
 
 The project performs EDA using:
 
@@ -369,7 +369,7 @@ Distribution plots help identify unusual values and understand the behavior of t
 
 ---
 
-# 🏷️ Reference Label Generation
+# Reference Label Generation
 
 Because the dataset does not contain a predefined attack/anomaly label, the project creates a **rule-based reference label**.
 
@@ -404,7 +404,7 @@ They are only used as a reference for evaluating the Isolation Forest prediction
 
 ---
 
-# ⚙️ Feature Selection
+# Feature Selection
 
 The following six behavioral features are used:
 
@@ -424,7 +424,7 @@ features_df = [
 
 ---
 
-# 📏 Feature Scaling
+# Feature Scaling
 
 The selected features are standardized using `StandardScaler`.
 
@@ -439,7 +439,7 @@ Scaling transforms the features into a comparable numerical range.
 
 ---
 
-# 🌲 Base Isolation Forest Model
+# Base Isolation Forest Model
 
 The initial model uses:
 
@@ -473,7 +473,7 @@ The predictions are converted into binary labels:
 
 ---
 
-# 📊 Anomaly Score
+# Anomaly Score
 
 The project also calculates the Isolation Forest anomaly score:
 
@@ -488,7 +488,7 @@ The project visualizes the distribution of anomaly scores using a histogram.
 
 ---
 
-# 🎛️ Parameter Tuning
+# Parameter Tuning
 
 Multiple Isolation Forest configurations are tested.
 
@@ -532,7 +532,7 @@ F1 Score
 
 ---
 
-# 🏆 Final Model
+# Final Model
 
 After testing the parameter combinations, the configuration with the highest **F1 Score against the rule-based reference labels** is selected.
 
@@ -553,7 +553,7 @@ final_model = IsolationForest(
 
 ---
 
-# 📋 Model Evaluation
+# Model Evaluation
 
 The final model is evaluated using:
 
@@ -588,7 +588,7 @@ Actual Anomaly
 
 ---
 
-# 🚨 Anomaly Detection
+# Anomaly Detection
 
 After training the final model, anomalous users are extracted:
 
@@ -611,7 +611,7 @@ Unique IP Count
 
 ---
 
-# 💾 Output
+# Output
 
 The detected anomalies are exported as:
 
@@ -630,7 +630,7 @@ This file can be used for:
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```text
 User-Behavior-Anomaly-Detection/
@@ -659,7 +659,7 @@ User-Behavior-Anomaly-Detection/
 
 ---
 
-# 🔄 End-to-End ML Pipeline
+# End-to-End ML Pipeline
 
 ```text
                     USER TELEMETRY
@@ -716,7 +716,7 @@ User-Behavior-Anomaly-Detection/
 
 ---
 
-# 🧠 Key Learning Outcomes
+# Key Learning Outcomes
 
 Through this project, I learned how to:
 
@@ -736,7 +736,7 @@ Through this project, I learned how to:
 
 ---
 
-# ⚠️ Important Project Limitation
+# Important Project Limitation
 
 This project uses **rule-based 3-sigma labels as reference labels** because the dataset does not contain verified attack/anomaly ground truth.
 
@@ -753,7 +753,7 @@ For a production security system, verified incident labels or expert-validated g
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 Possible future improvements include:
 
@@ -772,7 +772,7 @@ Possible future improvements include:
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Muhammad Aasik**
 
@@ -789,7 +789,7 @@ B.Sc Artificial Intelligence & Machine Learning Student
 
 ---
 
-# ⭐ Project Summary
+# Project Summary
 
 **User Behavior Anomaly Detection using Isolation Forest** demonstrates an end-to-end unsupervised machine learning workflow for identifying unusual user behavior from telemetry data.
 
